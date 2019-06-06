@@ -11,28 +11,8 @@
 </head>
 <body>
     <main id="wrapper">
-        
-
-    <div class="main-carousel carousel-custom">
-  <div class="carousel-cell carousel-custom-cell">
-    <div class="content">
-        teskt
-    </div>  
-  </div>
-  <div class="carousel-cell carousel-custom-cell">
-  </div>
-  <div class="carousel-cell carousel-custom-cell">
-  </div>
-</div>
-
-
-
-
-    <h1>
-        Hello form index
-    </h1>
-
-
+        {% block content %}
+        {% endblock content %}
     </main>
 
 

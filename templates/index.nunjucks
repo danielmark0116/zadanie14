@@ -1,0 +1,12 @@
+{% extends "base/layout.nunjucks" %}
+
+
+{% block content %}
+
+    {% include "partials/carousel.nunjucks" %}
+
+    <h1>
+        Hello form index
+    </h1>
+
+{% endblock content %}

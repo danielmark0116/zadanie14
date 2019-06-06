@@ -1,0 +1,11 @@
+.carousel-custom {
+  width: 100vw;
+  max-height: 50vh;
+  &-cell {
+    background-size: cover;
+    & .content {
+      margin: 0 auto;
+      max-width: 1200px;
+    }
+  }
+}
