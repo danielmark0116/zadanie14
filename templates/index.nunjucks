@@ -5,8 +5,8 @@
 
     {% include "partials/carousel.nunjucks" %}
 
-    <h1>
-        Hello form index
+    <h1 class="text-center mt-4">
+        Flickity Carousel
     </h1>
 
 {% endblock content %}

@@ -1,0 +1,32 @@
+.flickity-button {
+  background: transparent;
+  &:hover {
+    background: transparent;
+  }
+}
+/* big previous & next buttons */
+.flickity-prev-next-button {
+  width: 100px;
+  height: 100px;
+  margin: 0 2rem;
+}
+/* icon color */
+.flickity-button-icon {
+  fill: rgba($white, 0.7);
+  transition: 0.3s;
+  &:hover {
+    fill: $white;
+  }
+}
+/* hide disabled button */
+.flickity-button:disabled {
+  display: none;
+}
+
+@media (max-width: $breakpoint-medium) {
+  .flickity-prev-next-button {
+    width: 50px;
+    height: 50px;
+    margin: 0.5rem;
+  }
+}

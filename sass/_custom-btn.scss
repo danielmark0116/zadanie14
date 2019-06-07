@@ -1,0 +1,33 @@
+.btn-custom {
+  position: absolute;
+  top: 3rem;
+  left: 5rem;
+  font-size: 200%;
+  color: rgba(black, 0.6);
+  padding: 10px 20px;
+  z-index: 99;
+  border-radius: 20px;
+  background-color: rgba($white, 0.9);
+  border: none;
+  box-shadow: 0 0 10px rgba(black, 0.1);
+  transition: 0.3s ease;
+
+  &:active,
+  &:visited,
+  &:focus {
+    outline: none !important;
+  }
+  &:hover {
+    background-color: rgba($white, 1);
+    box-shadow: 5px 5px 10px rgba(black, 0.3);
+    transform: scale(1.05) translate(-3px, -3px);
+  }
+}
+
+@media (max-width: $breakpoint-medium) {
+  .btn-custom {
+    font-size: 150%;
+    top: 1rem;
+    left: 1rem;
+  }
+}

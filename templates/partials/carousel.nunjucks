@@ -1,13 +1,34 @@
-<div class="main-carousel carousel-custom">
-  <div class="carousel-cell carousel-custom-cell">
-    <div class="content">
-        teskt
-    </div>  
+<div class="container-fluid p-relative mp-reset">
+  <div class="button-group">
+    <button class="button btn-custom carousel-reset">
+      RESET
+    </button>
   </div>
-  <div class="carousel-cell carousel-custom-cell">
+
+  <div class="main-carousel carousel-custom">
+    <div class="carousel-cell carousel-custom-cell" style="background-image: url('https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80');" id="slide1">
+      <div class="content">
+          <h2>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci a doloribus quia modi tempora odio natus voluptatibus repudiandae facilis quibusdam soluta eos, officia neque, obcaecati iste odit in praesentium laborum?
+          </h2>
+      </div>  
+    </div>
+    <div class="carousel-cell carousel-custom-cell" style="background-image: url('https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80');" id="slide2">
+      <div class="content">
+          <h2>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci a doloribus quia modi tempora odio natus voluptatibus repudiandae facilis quibusdam soluta eos.
+          </h2>
+      </div>  
+    </div>
+    <div class="carousel-cell carousel-custom-cell" style="background-image: url('https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80');" id="slide3">
+      <div class="content">
+          <h2>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+          </h2>
+      </div>  
+    </div>
   </div>
-  <div class="carousel-cell carousel-custom-cell">
-  </div>
+  <div class="progress-bar"></div>
+
+
 </div>
-
-
