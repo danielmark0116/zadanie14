@@ -1,7 +1,7 @@
 'use strict';
 
-var elem = document.querySelector('.main-carousel');
-var flkty = new Flickity(elem, {
+const elem = document.querySelector('.main-carousel');
+const flkty = new Flickity(elem, {
   // options
   cellAlign: 'left',
   contain: true,
@@ -10,14 +10,8 @@ var flkty = new Flickity(elem, {
   groupCells: true
 });
 
-// element argument can be a selector string
-//   for an individual element
-var flkty = new Flickity('.main-carousel', {
-  // options
-});
-
-var buttonGroup = document.querySelector('.button-group');
-var buttons = buttonGroup.querySelectorAll('.button');
+const buttonGroup = document.querySelector('.button-group');
+const buttons = buttonGroup.querySelectorAll('.button');
 buttons = fizzyUIUtils.makeArray(buttons);
 
 buttonGroup.addEventListener('click', function(event) {
@@ -25,11 +19,11 @@ buttonGroup.addEventListener('click', function(event) {
   if (!matchesSelector(event.target, '.button')) {
     return;
   }
-  var index = buttons.indexOf(event.target);
+  let index = buttons.indexOf(event.target);
   flkty.selectCell(index);
 });
 
-var progressBar = document.querySelector('.progress-bar');
+const progressBar = document.querySelector('.progress-bar');
 
 flkty.on('scroll', function(progress) {
   progress = Math.max(0, Math.min(1, progress));
