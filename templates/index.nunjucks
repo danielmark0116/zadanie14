@@ -11,5 +11,14 @@
     <h2 class="text-center mt-4">
         Mustache Branch
     </h2>
+   
+
+    <div id="results"></div>
+
+    <script id="template-hello" type="x-tmpl-mustache">
+        <p>Hellos {{ firstname }} {{ lastname }}!</p>
+    </script>
+
+
 
 {% endblock content %}

@@ -10,60 +10,117 @@
     <title>Zadanie 14</title>
 </head>
 <body>
-    <main id="wrapper">
+  
         
+<!--
+  <div class="container-fluid p-relative mp-reset">
+    <div class="button-group">
+      <button class="button btn-custom carousel-reset">
+        RESET
+      </button>
+    </div>
 
-    <div class="container-fluid p-relative mp-reset">
-  <div class="button-group">
-    <button class="button btn-custom carousel-reset">
-      RESET
-    </button>
+    <div class="main-carousel carousel-custom">
+      <div class="carousel-cell carousel-custom-cell" style="background-image: url('https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80');" id="slide1">
+        <div class="content">
+            <h2>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci a doloribus quia modi tempora odio natus voluptatibus repudiandae facilis quibusdam soluta eos, officia neque, obcaecati iste odit in praesentium laborum?
+            </h2>
+        </div>  
+      </div>
+      <div class="carousel-cell carousel-custom-cell" style="background-image: url('https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80');" id="slide2">
+        <div class="content">
+            <h2>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci a doloribus quia modi tempora odio natus voluptatibus repudiandae facilis quibusdam soluta eos.
+            </h2>
+        </div>  
+      </div>
+      <div class="carousel-cell carousel-custom-cell" style="background-image: url('https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80');" id="slide3">
+        <div class="content">
+            <h2>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            </h2>
+        </div>  
+      </div>
+    </div>
+    <div class="progress-bar"></div>
+  </div> 
+-->
+
+    
+  <div class="container-fluid p-relative mp-reset">
+    <div class="button-group">
+      <button class="button btn-custom carousel-reset">
+        RESET
+      </button>
+    </div>
+
+    <div class="main-carousel carousel-custom" id="results2">
+      
+      
+    </div>
+    <div class="progress-bar"></div>
+
+
   </div>
-
-  <div class="main-carousel carousel-custom">
-    <div class="carousel-cell carousel-custom-cell" style="background-image: url('https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80');" id="slide1">
-      <div class="content">
-          <h2>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci a doloribus quia modi tempora odio natus voluptatibus repudiandae facilis quibusdam soluta eos, officia neque, obcaecati iste odit in praesentium laborum?
-          </h2>
-      </div>  
-    </div>
-    <div class="carousel-cell carousel-custom-cell" style="background-image: url('https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80');" id="slide2">
-      <div class="content">
-          <h2>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci a doloribus quia modi tempora odio natus voluptatibus repudiandae facilis quibusdam soluta eos.
-          </h2>
-      </div>  
-    </div>
-    <div class="carousel-cell carousel-custom-cell" style="background-image: url('https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80');" id="slide3">
-      <div class="content">
-          <h2>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-          </h2>
-      </div>  
-    </div>
-  </div>
-  <div class="progress-bar"></div>
-
-
-</div>
-
-    <h1 class="text-center mt-4">
-        Flickity Carousel
-    </h1>
-    <h2 class="text-center mt-4">
-        Mustache Branch
-    </h2>
-
-
-    </main>
+  
+  <script id="carousel-item" type="x-tmpl-mustache">
+    
+        <div class="carousel-cell carousel-custom-cell" style="background-image: url({{image}})" id="{{id}}">
+          <div class="content">
+              <h2>
+              {{title}}
+                {{desc}}
+              </h2>
+          </div>  
+        </div>
+    
+  </script>
+  <script>
+    const slideList= [
+      {
+        title: 'Title',
+        desc: 'DEsc',
+        image: 'https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80',
+        id: 'slide1'
+      },
+      {
+        title: 'Title',
+        desc: 'DEsc',
+        image: 'https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80',
+        id: 'slide2'
+      },
+      {
+        title: 'Title',
+        desc: 'DEsc',
+        image: 'https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80',
+        id: 'slide3'
+      }
+    ]
+  </script>
 
 
+  <h1 class="text-center mt-4">
+      Flickity Carousel
+  </h1>
+  <h2 class="text-center mt-4">
+      But generated with Mustache
+  </h2>
+
+  
+
+    
+
+  
+
+    <script src="js/mustache.js"></script>
+    <script src="js/template.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <script src="vendor/js//hash.js"></script>
+    <script src="vendor/js/hash.js"></script>
     <script src="js/script.js"></script>
+    
 </body>
 </html>

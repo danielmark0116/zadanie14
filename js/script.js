@@ -11,7 +11,7 @@ const flkty = new Flickity(elem, {
 });
 
 const buttonGroup = document.querySelector('.button-group');
-const buttons = buttonGroup.querySelectorAll('.button');
+let buttons = buttonGroup.querySelectorAll('.button');
 buttons = fizzyUIUtils.makeArray(buttons);
 
 buttonGroup.addEventListener('click', function(event) {
