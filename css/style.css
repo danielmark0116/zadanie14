@@ -3189,6 +3189,8 @@ body { background: #f6f6f6; }
 
 .carousel-custom-cell .content { margin: 2rem 5rem; max-width: 996px; -ms-flex-item-align: center; -ms-grid-row-align: center; align-self: center; }
 
+.carousel-custom-cell .content h1 { font-size: 4rem; text-shadow: 0 0 10px rgba(0, 0, 0, 0.2); color: #000; -webkit-text-fill-color: white; /* Will override color (regardless of order) */ -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: #000; }
+
 .carousel-custom-cell .content h2 { color: rgba(0, 0, 0, 0.9); font-size: 1.2rem; font-weight: 400; padding: 2rem 4rem; background-color: rgba(246, 246, 246, 0.3); border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
 
 .progress-bar { height: 10px; width: 0; background-color: #5d13e7; }

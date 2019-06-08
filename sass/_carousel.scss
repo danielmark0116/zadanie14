@@ -13,6 +13,14 @@
       margin: 2rem 5rem;
       max-width: $breakpoint-medium;
       align-self: center;
+      & h1 {
+        font-size: 4rem;
+        text-shadow: 0 0 10px rgba($black, 0.2);
+        color: $black;
+        -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: $black;
+      }
       & h2 {
         // text-transform: uppercase;
         color: rgba(black, 0.9);
