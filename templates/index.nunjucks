@@ -9,7 +9,7 @@
         Flickity Carousel
     </h1>
     <h2 class="text-center mt-4">
-        Mustache
+        Mustache Branch
     </h2>
 
 {% endblock content %}
