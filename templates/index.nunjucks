@@ -8,5 +8,8 @@
     <h1 class="text-center mt-4">
         Flickity Carousel
     </h1>
+    <h2 class="text-center mt-4">
+        Mustache
+    </h2>
 
 {% endblock content %}
