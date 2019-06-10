@@ -85,22 +85,52 @@
         title: 'The Forest Stalkers',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem incidunt est ipsa explicabo vero consequatur minima cumque delectus et accusamus optio, deleniti aliquid aut! Sint nobis amet qui suscipit reiciendis?',
         image: 'https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80',
-        id: 'slide1'
+        id: 'slide1',
+        coords: {
+          lat: -25.344,
+          lng: 131.036,
+          name: 'Marker One'
+        }
       },
       {
         title: 'Moon mowers',
         desc: 'Lorem lorem ipsum dolor',
         image: 'https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80',
-        id: 'slide2'
+        id: 'slide2',
+        coords: {
+          lat: -25.363,
+          lng: 134.044,
+          name: 'Marker Two'
+        }
       },
       {
         title: 'Green Green Leaf',
         desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et aliquid ea necessitatibus quisquam tempora possimus praesentium.',
         image: 'https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80',
-        id: 'slide3'
+        id: 'slide3',
+        coords: {
+          lat: -25.363,
+          lng: 137.044,
+          name: 'Marker Three'
+        }
+      },
+      {
+        title: 'Green Green Leaf v2',
+        desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et aliquid ea necessitatibus quisquam tempora possimus praesentium.',
+        image: 'https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80',
+        id: 'slide3',
+        coords: {
+          lat: -25.363,
+          lng: 140.044,
+          name: 'Marker Three'
+        }
       }
     ]
   </script>
+  <div id="map"></div>
+
+  <div class="alert alert-success mt-3" role="alert" id="info"></div>
+
 
 
   <h1 class="text-center mt-4">
@@ -109,6 +139,15 @@
   <h2 class="text-center mt-4">
       But generated with Mustache
   </h2>
+  <h2 class="text-center mt-4">
+      + Google Maps
+  </h2>
+  <br>
+    
+  </div>
+
+  
+
 
   
 
@@ -124,6 +163,10 @@
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="vendor/js/hash.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/gmaps.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjQPXJd7zSL73lmIxawo7iSPaH2dXluqw&callback=initMap">
+    </script>
     
 </body>
 </html>

@@ -3219,3 +3219,7 @@ body { background: #f6f6f6; }
 .btn-custom:hover { background-color: #f6f6f6; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); transform: scale(1.05) translate(-3px, -3px); }
 
 @media (max-width: 996px) { .btn-custom { font-size: 150%; top: 1rem; left: 1rem; } }
+
+#map { height: 45vh; width: 100%; }
+
+.alert { visibility: hidden; position: fixed; top: 0; left: 0; right: 0; margin: 0 auto; width: 300px; }
